@@ -1,4 +1,4 @@
-let myHeading = document.querySelector('p');
+let myHeading = document.querySelectorAll('p');
 
 if(myHeading === null){
     console.log("myHeading is null");
@@ -23,7 +23,8 @@ function changeColor(){
 
         let newColor = rgbToHex(randomR,randomG,randomB);
 
-        myHeading.style = "color:" + newColor;
+        myHeading.forEach(Element => Element.style = "color:" + newColor);
+        //myHeading.style = "color:" + newColor;
         //console.log(newColor);
     }
     else{

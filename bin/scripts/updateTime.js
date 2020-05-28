@@ -226,9 +226,8 @@ function getTime(){
     //check for weather changes
     var weatherExtention = "";
 
-    if(canUseWeather){
-        var remote = require('electron').remote;
-    
+    if(canUseWeather){       
+        music.type = "audio/wav";
         var isRaining = JSON.parse(sessionStorage.getItem("global_raining"));
         var isSnowing = JSON.parse(sessionStorage.getItem("global_snowing"));
 

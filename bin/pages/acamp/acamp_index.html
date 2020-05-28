@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html id="background_image">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./acamp_style.css">
+    <link rel="stylesheet" href="./acamp_button.css">
+    <!-- <script src="../../scripts/global.js"></script>-->
+    <title> Animal Crossing: Automated Music Player</title>
+    
+    </head>
+  <body>
+    
+    <div class="play-pause">
+      <input type="checkbox" value="" id="playPauseCheckbox" name="playPauseCheckbox" checked />
+      <label for="playPauseCheckbox"></label>
+    </div>
+
+    <!-- play music in the background-->
+    <audio autoplay  id="menu_music" loop>
+      <source src="../../music/title/menu.mp3"></source>
+      <script src="../../scripts/setVolume20.js" param="menu_music"></script><!-- lower the volume of the audio-->
+    </audio>
+
+    <h1 id="title">Animal Crossing</h1>
+
+    
+
+    <!-- Wild world button -->
+    <p id = "button">
+      <span class="tooltip" >
+        <a href="./wildWorld.html" id="wild_world_button" title="Play from the Wild World OST">
+          Wild World
+        </a>
+      </span>
+    </p>
+
+    <p id = "button">
+      <span class="tooltip" >
+        <a href="./newLeaf.html" id="new_leaf_button" title="Play from the New Leaf OST">
+          New Leaf
+        </a>
+      </span>
+    </p>  
+
+    <p id = "button">
+      <span class="tooltip" >
+        <a href="./newHorizons.html" id="new_horizons_button" title="Play from the New Horizons OST">
+          New Horizions
+        </a>
+      </span>
+    </p>
+
+    <!-- Options Button -->
+    <p id = "button">
+      <span class="tooltip" >
+        <a href="./options.html" id="options_button" title="Takes you to the options.">
+          Options
+        </a>
+      </span>
+    </p>
+
+    <p id = "button">
+      <span class="tooltip" >
+        <a href="../../../index.html" id="options_button" title="Back to the HOME page">
+          Home
+        </a>
+      </span>
+    </p>
+    
+    
+
+    <!-- You can also require other files to run in this process -->
+    <script src="../../scripts/stopMenuMusic.js"></script>
+    <script src="../../scripts/randomBackground.js"></script>
+    <script src="../../scripts/mediaButtonClicked.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+#button{
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+
+}
+
+.tooltip {
+    color:#ffff00;
+    /*visibility: hidden;*/
+    position: relative;
+    display: inline;
+
+    z-index: 1;
+}
+
+.tooltip:hover {
+   /* visibility: visible;*/
+   color:#ffffff;
+}
+
+#wild_world_button {
+    text-decoration: none;
+    color:#ffff00;
+    background:none;
+    border:none;
+    font-size: 72px;
+}
+
+#wild_world_button:hover {
+    color:#ffffff;
+}
+
+#new_leaf_button {
+    text-decoration: none;
+    color:#ffff00;
+}
+
+#new_leaf_button:hover {
+    color:#ffffff;
+}
+
+#new_horizons_button {
+    text-decoration: none;
+    color:#ffff00;
+}
+
+#new_horizons_button:hover {
+    color:#ffffff;
+}
+
+#options_button {
+    text-decoration: none;
+    color:#ffff00;
+}
+
+#options_button:hover {
+    color:#ffffff;
+}
+
+#back_button {
+    text-decoration: none;
+    color:#ffff00;
+}
+
+#back_button:hover {
+    color:#ffffff;
+}
+
+#menu_button {
+    text-decoration: none;
+    color:#ffff00;
+}
+
+#menu_button:hover {
+    color:#ffffff;
+}
+
+/*Option MENU STUFF*/
+.volume_button{
+    color:#ffff00;
+    /*visibility: hidden;*/
+    position: relative;
+    display: inline;
+
+    z-index: 1;
+}
+
+#volume_button_decrease{
+    color:#ffff00;
+    position: relative;
+    display:inline;
+    background:none;
+    border:none;
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+    z-index:1;
+}
+
+#volume_button_decrease:hover{
+    color:#ffffff;
+}
+
+#volume_button_increase{
+    color:#ffff00;
+    position: relative;
+    display:inline;
+    background:none;
+    border:none;
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+    z-index:1;
+}
+
+#volume_button_increase:hover{
+    color:#ffffff;
+}
+
+#volume_button{
+    color:#ffff00;
+    position: relative;
+    display:inline;
+    background:none;
+    border:none;
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+    z-index:1;
+    
+}
+
+#rain_button{
+    /*color:#ffff00;*/
+    position: relative;
+    display:inline;
+    background:none;
+    border:none;
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+    z-index:1;
+}
+
+#rain_button:hover{
+    color:#ffffff;
+}
+
+#snow_button{
+    /*color:#ffff00;*/
+    position: relative;
+    display:inline;
+    background:none;
+    border:none;
+    font-size:48px;
+    font-family:"Pixel Font";
+    text-align:center;
+    color:#ffff00;
+    z-index:1;
+}
+
+#snow_button:hover{
+    color:#ffffff;
+}
+
+.media_button {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+  
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    cursor: pointer;
+  
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+  
+  }
+
+  .media_button.paused{
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }
+
+  .media_button:hover{
+    border-color: transparent transparent transparent #404040;
+  }
+
+  .playpause {
+    /*visibility: hidden;*/
+  }
+
+  label{
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    
+    border-color: transparent transparent transparent rgb(239, 241, 78);
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+    position: relative;
+    left:95%;
+  }
+
+  input[type="checkbox"] {
+      visibility: hidden;
+      position: absolute;
+      left: -9999px;
+  }
+
+  input[type="checkbox"]:checked + label{
+       border-style: solid;
+       border-width: 37px 0 37px 60px;
+  }
+
+  input[type="checkbox"]:focus + label{
+    box-shadow: 0 0 5px white;
+  }
+  
+  
+  
+
+

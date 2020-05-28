@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html id = "background_image">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./acamp_style.css">
+    <link rel="stylesheet" href="./acamp_button.css">
+    <title>Animal Crossing: Automated Music Player</title>
+  </head>
+  <body>
+    <div class="play-pause">
+      <input type="checkbox" value="" id="playPauseCheckbox" name="playPauseCheckbox"/ checked>
+      <label for="playPauseCheckbox"></label>
+    </div>
+
+    <h4 id="game_name">Wild World</h1> 
+    <p></p>
+    <h1 id="title_time">00:00:00 AM</h1> 
+    
+
+      <!-- Back Button -->
+    <p id = "button">
+        <span class="tooltip" >
+          <a href="./acamp_index.html" id="menu_button" title="Takes you back to the main menu.">
+            Back
+          </a>
+        </span>
+    </p>
+    
+
+
+    <!-- play music in the background-->
+    <audio id="in_game_music">
+        <source src="../../music/in_game/wild_world/1PM.mp3"></source>
+        <script src="../../scripts/setVolume20.js" param="WildWorldMusic"></script> <!-- lower the volume of the audio-->
+    </audio>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="../../scripts/stopMenuMusic.js" param="menu_music"></script> <!-- stop the menu music-->
+    <script src="../../scripts/updateTime.js"></script> <!-- update our clock, and play the appropriate music -->
+    <script src="../../scripts/mediaButtonClicked.js"></script>
+  </body>
+</html>

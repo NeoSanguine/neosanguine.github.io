@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html id = "background_image">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./button.css">
+    <title>Animal Crossing: Automated Music Player</title>
+  </head>
+  <body>
+    <h4 id="game_name">New Horizions</h1> <!-- Title -->
+    <h1 id="title_time">00:00:00 AM</h1> <!-- Dynamic Clock -->
+    
+    
+
+      <!-- Back Button -->
+    <p id = "button">
+        <span class="tooltip" >
+          <a href="./index.html" id="menu_button" title="Takes you back to the main menu.">
+            Back
+          </a>
+        </span>
+    </p>
+    
+
+
+    <!-- play music in the background-->
+    <audio id="in_game_music">
+        <source src="./bin/music/in_game/wild_world/1PM.mp3"></source>
+        <script src="./bin/scripts/setVolume20.js" param="WildWorldMusic"></script> <!-- lower the volume of the audio-->
+    </audio>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./bin/scripts/stopMenuMusic.js" param="menu_music"></script> <!-- stop the menu music-->
+    <script src="./bin/scripts/updateTime.js"></script> <!-- stop the menu music-->
+  </body>
+</html>

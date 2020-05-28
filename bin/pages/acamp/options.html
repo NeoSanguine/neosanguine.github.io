@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html id="background_image">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./acamp_style.css">
+    <link rel="stylesheet" href="./acamp_button.css">
+    <!-- <script src="../../scripts/global.js"></script>-->
+
+    <title> Animal Crossing: Automated Music Player</title>
+    
+    </head>
+  <body>
+
+    <!-- play music in the background-->
+    <audio autoplay  id="menu_music" loop >
+      <source src="../../music/title/menu.mp3"></source>
+      <script src="../../scripts/setVolume20.js" param="menu_music"></script> <!-- lower the volume of the audio-->
+    </audio>
+    
+    <h1 id="title">Options</h1>  
+
+    <!-- Wild world button -->
+    <!--<p id = "button">
+      <span class="tooltip" >
+        <a href="" id="wild_world_button" title="Pump up the jam, pump it up, while your feet are stomping! ">
+          Volume Up
+        </a>
+      </span>
+    </p>-->
+
+    <p id = "button">
+        <span class="tooltip" >
+          <button id="volume_button_decrease" title="Turn down the volume.">
+            -
+          </button>
+        </span>
+
+        <span class="tooltip" >
+          <button id="volume_button" title="display_volume_on_hover">
+               Volume
+          </button>
+        </span>
+
+        <span class="tooltip" >
+          <button id="volume_button_increase" title="Pump up the jam, pump it up, while your feet are stomping! ">
+               +
+          </button>
+        </span>
+
+
+      </p>
+
+    <p id = "button">
+      <span class="tooltip" >
+        <button id="snow_button" title="Let there be snow!">
+          <span id="snow_button_color" style="color:#ff0000">
+            Snow
+          </span>
+        </button>
+      </span>
+    </p>  
+
+    <p id = "button">
+      <span class="tooltip" >
+        <button id="rain_button" title="Make it rain!">
+          <span id="rain_button_color" style="color:#ff0000">
+            Rain
+          </span>      
+        </button>
+      </span>
+    </p>
+
+    <p id = "button">
+        <span class="tooltip"  >
+          <a href="./acamp_index.html" id="new_horizons_button" title="Go back to the previous screen.">
+            Back
+          </a>
+        </span>
+      </p>
+    
+    
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="../../scripts/stopMenuMusic.js" param="menu_music"></script> <!-- stop the menu music-->
+    <script src="../../scripts/increaseVolume.js"></script>
+    <script src="../../scripts/decreaseVolume.js"></script>
+    <script src="../../scripts/updateMusicType.js"></script>
+  </body>
+</html>

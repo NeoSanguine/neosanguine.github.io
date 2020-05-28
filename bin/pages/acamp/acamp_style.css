@@ -1,0 +1,59 @@
+
+@font-face{
+    font-family:"Pixel Font";
+    src: url("../../font/Animal-Crossing-Wild-World.ttf") format("truetype");
+}
+
+#title {
+    color:rgb(239, 241, 78);
+    text-align:center;
+    font-size: 128px;
+
+    font-family:"Pixel Font";
+}
+
+#game_name{
+    color:rgb(239, 241, 78);
+    text-align:center;
+    font-size: 72px;
+
+    font-family:"Pixel Font";
+}
+
+h1{
+    color:rgb(239, 241, 78);
+    text-align:center;
+    font-size: 128px;
+
+    font-family:"Pixel Font";
+
+}
+
+#selection
+{
+    color:rgb(239, 241, 78);
+    text-align:center;
+    font-size: 128px;
+
+    font-family:"Pixel Font";
+}
+
+h4{
+    display: none;
+}
+
+
+html{
+    background-image: url('../../background/ac_background2.png');
+    /*Resize and stretch the image*/
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    
+}
+
+/* Hide the scroll bar*/
+::-webkit-scrollbar{
+    display: none;
+}

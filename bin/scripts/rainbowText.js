@@ -1,4 +1,4 @@
-let myHeading = document.querySelectorAll('p');
+let myHeading = document.getElementsByClassName('rainbowText');
 
 if(myHeading === null){
     console.log("myHeading is null");
@@ -23,7 +23,15 @@ function changeColor(){
 
         let newColor = rgbToHex(randomR,randomG,randomB);
 
-        myHeading.forEach(Element => Element.style = "color:" + newColor);
+
+        // for every rainbowText class that we find, change the color
+        for(i = 0; i < myHeading.length; i++){
+            if(myHeading.item(i) !== null){
+                myHeading.item(i).style = "color:" + newColor;
+            }
+        }
+
+        //myHeading.forEach(Element => Element.style = );
         //myHeading.style = "color:" + newColor;
         //console.log(newColor);
     }

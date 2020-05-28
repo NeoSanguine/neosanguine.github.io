@@ -62,10 +62,11 @@ body{
 
 /*footer*/
 .footer{
-    padding:20px;
+    padding:1px;
     text-align: center;
     background:black;
     margin-top:20px;
+    font-size: 16px;
 }
 
 /*responsive layout- screen less than 800px, then stack the columns*/
@@ -87,6 +88,7 @@ li{
 .menu_item{
     display: contents;
     padding: 128px;
+    font-size: 32px;
     background-color: black;
 }
 
@@ -97,11 +99,12 @@ li{
 
 a{
     color:#aa0a0a;
-    text-decoration: none;
+    text-decoration: solid;
 }
 
 a:hover{
     color:white;
+    /*background-color: #aa0a0a;*/
 }
 
 ul{
@@ -109,4 +112,8 @@ ul{
     margin: 0;
     padding:0;
     
+}
+
+.active{
+    color:white;
 }

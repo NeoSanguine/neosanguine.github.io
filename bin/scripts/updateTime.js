@@ -228,8 +228,8 @@ function getTime(){
 
     if(canUseWeather){       
         music.type = "audio/wav";
-        var isRaining = JSON.parse(sessionStorage.getItem("global_raining"));
-        var isSnowing = JSON.parse(sessionStorage.getItem("global_snowing"));
+        var isRaining = JSON.parse(localStorage.getItem("global_raining"));
+        var isSnowing = JSON.parse(localStorage.getItem("global_snowing"));
 
         if(isRaining){
             weatherExtention = "_rain";

@@ -8,7 +8,7 @@ function decreaseVolume()
    if( currentVolume - 0.1 <= 0.0 ||  currentVolume === null){
 
     //global_volume = 0.0;
-    sessionStorage.setItem("global_volume",0.0)
+    localStorage.setItem("global_volume",0.0)
 
    }
    else{
@@ -17,11 +17,11 @@ function decreaseVolume()
 
     var newVolume = currentVolume - 0.1;
 
-    sessionStorage.setItem("global_volume",newVolume)
+    localStorage.setItem("global_volume",newVolume)
 
    }
 
-   var volume = parseFloat(sessionStorage.getItem("global_volume"));
+   var volume = parseFloat(localStorage.getItem("global_volume"));
    console.log("New Volume: " + volume);
 
 

@@ -11,7 +11,7 @@ function toggleMusic(){
         if(checkbox.checked === false){
             audio.play();
 
-            var globalVolume = sessionStorage.getItem("global_volume");
+            var globalVolume = localStorage.getItem("global_volume");
             console.log("PLAYING: Volume:" + globalVolume);
             audio.volume = parseFloat(globalVolume);
            
@@ -28,7 +28,7 @@ function toggleMusic(){
         if(checkbox.checked === false){
             ingameAudio.play();
 
-            var globalVolume = sessionStorage.getItem("global_volume");
+            var globalVolume = localStorage.getItem("global_volume");
             console.log("PLAYING: Volume:" + globalVolume);
             ingameAudio.volume = parseFloat(globalVolume);
            

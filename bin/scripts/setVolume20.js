@@ -8,7 +8,7 @@
 
    // get the global volume
 
-   globalVolume = sessionStorage.getItem("global_volume");
+   globalVolume = localStorage.getItem("global_volume");
 
    console.log("Global Volume: " + globalVolume);
 

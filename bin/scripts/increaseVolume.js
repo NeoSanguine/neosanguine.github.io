@@ -3,24 +3,24 @@ function increaseVolume()
 
    // just lowers the volume to 20% of max
 
-   var currentVolume = sessionStorage.getItem("global_volume");
+   var currentVolume = localStorage.getItem("global_volume");
 
    var volume = 0.0;
 
    if( JSON.parse(currentVolume) + 0.1 >= 0.99){
 
     //global_volume = 1.0;
-    sessionStorage.setItem("global_volume", 1.0);
+    localStorage.setItem("global_volume", 1.0);
 
    }
    else{
 
     //global_volume = currentVolume + 0.1;
     var newVolume = JSON.parse(currentVolume) + 0.1;
-    sessionStorage.setItem("global_volume", newVolume);
+    localStorage.setItem("global_volume", newVolume);
    }
 
-   volume = JSON.parse(sessionStorage.getItem("global_volume"));
+   volume = JSON.parse(localStorage.getItem("global_volume"));
 
    if(volume > 1.0){
      volume = 1.0;

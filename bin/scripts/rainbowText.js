@@ -23,14 +23,15 @@ function changeColor(){
 
         let newColor = rgbToHex(randomR,randomG,randomB);
      
-        var canRainbow = sessionStorage.getItem("global_rainbowText");
+        var canRainbow = localStorage.getItem("global_rainbowText");
 
         // for every rainbowText class that we find, change the color
         for(i = 0; i < myHeading.length; i++){
             if(myHeading.item(i) !== null){
                  
                 console.log(canRainbow);
-                if(canRainbow === true){
+
+                if(canRainbow === "true"){
                     myHeading.item(i).style = "color:" + newColor;
                 }
                
